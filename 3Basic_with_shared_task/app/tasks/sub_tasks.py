@@ -1,0 +1,10 @@
+from celery import shared_task
+import time
+
+@shared_task
+def sub(x, y):
+    time.sleep(12)
+    return x - y
+
+
+
